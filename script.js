@@ -24,7 +24,6 @@ mainGame.addEventListener('click', function() {
 	newNumber()
 })
 
-
 function newNumber() {
 	if (arrayLetter.length > 0) {
 	    j++
