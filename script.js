@@ -7,7 +7,7 @@ let topRight = document.getElementById("score-topRight")
 let bottomLeft = document.getElementById("score-bottomLeft")
 let bottmRight = document.getElementById("score-bottomRight")
 
-for (k = 0;k < 6; k++) {
+for (k = 0;k < 53; k++) {
 	arrayLetter.push(k)
 	arrayQuestion.push(k)
 }
@@ -20,10 +20,10 @@ document.querySelectorAll('.score').forEach(el => {
 	})
 })
 
-
 mainGame.addEventListener('click', function() {
 	newNumber()
 })
+
 
 function newNumber() {
 	if (arrayLetter.length > 0) {
@@ -37,7 +37,7 @@ function newNumber() {
 	    arrayLetter.splice(arrayLetter.indexOf(rValueLetter),1)
 	    arrayQuestion.splice(arrayQuestion.indexOf(rValueQuestion),1)
 	    document.getElementById(letter).style.zIndex = j
-	    document.getElementById(letter).style.animation = "reversesLetter .4s ease-out forwards 1.2s"
+	    document.getElementById(letter).style.animation = "reversesLetter .4s ease-out forwards 3s"
 	    document.getElementById(question).style.zIndex = j
 	    document.getElementById(question).style.animation = "reversesQuestion .4s ease-out forwards"
     }
